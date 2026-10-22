@@ -40,15 +40,15 @@ describe("Test LanguageList", () => {
 
     // select rectangle tool to show properties menu
     UI.clickTool("rectangle");
-    // english lang should display `thin` label
-    expect(screen.queryByTitle(/thin/i)).not.toBeNull();
+    // New visitors start in Spanish.
+    expect(screen.queryByTitle(/fino/i)).not.toBeNull();
     fireEvent.click(document.querySelector(".dropdown-menu-button")!);
 
     fireEvent.change(document.querySelector(".dropdown-select__language")!, {
       target: { value: TEST_LANG_CODE },
     });
-    // switching to French, `thin` label should no longer exist
-    await waitFor(() => expect(screen.queryByTitle(/thin/i)).toBeNull());
+    // Switching to French replaces the Spanish label.
+    await waitFor(() => expect(screen.queryByTitle(/fino/i)).toBeNull());
     // reset language
     fireEvent.change(document.querySelector(".dropdown-select__language")!, {
       target: { value: defaultLang.code },

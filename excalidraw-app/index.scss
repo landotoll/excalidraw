@@ -1,10 +1,10 @@
 @import "../packages/excalidraw/css/variables.module.scss";
 
 .excalidraw {
-  --color-primary-contrast-offset: #625ee0; // to offset Chubb illusion
+  --color-primary-contrast-offset: #be185d;
 
   &.theme--dark {
-    --color-primary-contrast-offset: #726dff; // to offset Chubb illusion
+    --color-primary-contrast-offset: #f9a8d4;
   }
 
   .footer-center {

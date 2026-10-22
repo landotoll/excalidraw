@@ -1,6 +1,8 @@
 {
   "labels": {
     "signUp": "Sign up",
+    "plusComments": "Make comments with Excalidraw+",
+    "plusPresentation": "Create presentations with Excalidraw+",
     "signIn": "Sign in",
     "upgrade": "Upgrade",
     "tryExcalidrawPlus": "Try Excalidraw+",

@@ -145,6 +145,7 @@ import { AIComponents } from "./components/AI";
 import { ExcalidrawPlusIframeExport } from "./ExcalidrawPlusIframeExport";
 
 import "./index.scss";
+import "./pink-theme.scss";
 
 import { ExcalidrawPlusPromoBanner } from "./components/ExcalidrawPlusPromoBanner";
 import { AppSidebar } from "./components/AppSidebar";
@@ -244,7 +245,10 @@ const initializeScene = async (opts: {
       repairBindings: true,
       deleteInvisibleElements: true,
     }),
-    appState: restoreAppState(localDataState?.appState, null),
+    appState: restoreAppState(
+      { viewBackgroundColor: "#fff1f7", ...localDataState?.appState },
+      null,
+    ),
   };
 
   let roomLinkData = getCollaborationLinkData(window.location.href);

@@ -1,0 +1,72 @@
+// App-only palette: embedded Excalidraw consumers retain their original theme.
+// Extra specificity ensures the palette also reaches editor portals.
+.excalidraw.excalidraw {
+  --color-primary: #be185d;
+  --color-primary-darker: #9d174d;
+  --color-primary-darkest: #831843;
+  --color-primary-hover: #9d174d;
+  --color-primary-light: #fce7f3;
+  --color-primary-light-darker: #fbcfe8;
+  --color-brand-hover: #9d174d;
+  --color-brand-active: #831843;
+  --color-selection: #db2777;
+  --color-surface-high: #fce7f3;
+  --color-surface-mid: #fff1f7;
+  --color-surface-low: #fce7f3;
+  --color-surface-lowest: #fff7fb;
+  --color-surface-primary-container: #fbcfe8;
+  --color-on-primary-container: #831843;
+  --color-on-surface: #4a1932;
+  --color-logo-text: #831843;
+  --island-bg-color: #fff7fb;
+  --island-bg-color-alt: #fff1f7;
+  --default-bg-color: #fff1f7;
+  --input-bg-color: #fff7fb;
+  --input-hover-bg-color: #fce7f3;
+  --input-border-color: #f9a8d4;
+  --color-border-outline: #a34d76;
+  --color-border-outline-variant: #f9a8d4;
+  --focus-highlight-color: #db2777;
+  --link-color: #be185d;
+  --link-color-hover: #831843;
+  --link-color-active: #9d174d;
+  --select-highlight-color: #db2777;
+  --popup-secondary-bg-color: #fce7f3;
+
+  &.theme--dark {
+    --color-primary: #f9a8d4;
+    --color-primary-darker: #fbcfe8;
+    --color-primary-darkest: #fce7f3;
+    --color-primary-hover: #fbcfe8;
+    --color-primary-light: #64213f;
+    --color-primary-light-darker: #501b34;
+    --color-brand-hover: #fbcfe8;
+    --color-brand-active: #f9a8d4;
+    --color-surface-high: #542039;
+    --color-surface-mid: #321524;
+    --color-surface-low: #3e192b;
+    --color-surface-lowest: #24101b;
+    --color-surface-primary-container: #64213f;
+    --color-on-primary-container: #fce7f3;
+    --color-on-surface: #fce7f3;
+    --color-logo-text: #fbcfe8;
+    --island-bg-color: #321524;
+    --island-bg-color-alt: #3e192b;
+    --default-bg-color: #24101b;
+    --input-bg-color: #24101b;
+    --input-hover-bg-color: #542039;
+    --input-border-color: #a34d76;
+    --color-border-outline: #d487aa;
+    --color-border-outline-variant: #a34d76;
+    --focus-highlight-color: #f9a8d4;
+    --link-color: #f9a8d4;
+    --link-color-hover: #fce7f3;
+    --link-color-active: #fbcfe8;
+    --popup-secondary-bg-color: #542039;
+  }
+
+  .plus-banner {
+    --plus-banner-bg: var(--color-surface-mid);
+    --plus-banner-subtitle: var(--color-primary);
+  }
+}
